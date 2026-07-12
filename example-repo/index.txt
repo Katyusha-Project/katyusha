@@ -1,0 +1,23 @@
+# Katyusha package index
+# Format: [NAME][VERSION][URL][URL_PACK][DESCRIPTION optional]
+# - Lines starting with '#' are comments and are ignored.
+# - URL_PACK must be HTTPS and point directly to the raw archive
+#   bytes (NOT a github.com/.../tree/... page, which is an HTML
+#   viewer, not the file itself).
+# - The archive (.tar.gz, .tar.xz, .tar.bz2, or .tar all work) must
+#   contain, at its root, either a binary named the same as NAME, or
+#   an executable install.sh script. If it's a source tarball that
+#   needs a build step, package it with an install.sh instead of
+#   relying on auto-detection.
+#
+# This index file lives in Katyusha-Proyect/katyusha-packages-archive.
+# The actual archive files are committed directly (no releases) into
+# Katyusha-Proyect/katyusha-packages, under packages/. Their raw
+# download URL follows this pattern:
+#   https://raw.githubusercontent.com/{owner}/{repo}/{branch}/{path}
+
+[nano][9.1][https://nano-editor.org][https://raw.githubusercontent.com/Katyusha-Proyect/katyusha-packages/main/packages/gnu/nano-9.0/nano-9.1.tar.gz][Simple terminal text editor]
+
+# btop: single self-contained binary, just like nano. Build it with
+# plain `make`, grab the resulting `bin/btop`, package it alone.
+[btop][1.4.7][https://github.com/aristocratos/btop][https://raw.githubusercontent.com/Katyusha-Proyect/katyusha-packages/main/packages/cli-tools/btop-1.4.7/btop-1.4.7.tar.gz][Modern resource monitor for the terminal]

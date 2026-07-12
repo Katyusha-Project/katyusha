@@ -1,0 +1,14 @@
+Package: katyusha
+Version: __VERSION__
+Section: admin
+Priority: optional
+Architecture: __ARCH__
+Depends: libc6 (>= 2.34), curl, tar
+Maintainer: Katyusha Project <contact@katyusha-proyect.dev>
+Homepage: https://github.com/Katyusha-Proyect/katyusha
+Description: Universal package manager for Linux
+ Katyusha installs packages from a GitHub-hosted index. Downloads are
+ restricted to HTTPS and a trusted-host list, verified with SHA-256
+ on a trust-on-first-use basis, and audited for path traversal before
+ anything is copied onto the system. Core filesystem operations are
+ implemented in C; networking, parsing and policy live in Rust.

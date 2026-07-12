@@ -1,0 +1,20 @@
+[package]
+name = "katyusha"
+version = "0.1.0"
+edition = "2021"
+authors = ["Katyusha Project"]
+description = "Universal Linux package manager with a C core and a Rust security layer"
+license = "MIT"
+build = "build.rs"
+
+[[bin]]
+name = "katyusha"
+path = "src/main.rs"
+
+[build-dependencies]
+cc = "1"
+
+[profile.release]
+opt-level = 3
+lto = true
+strip = true
