@@ -56,14 +56,14 @@ Katyusha/
 
 ## Two separate GitHub repositories
 
-Katyusha's package ecosystem, under the `Katyusha-Proyect`
-organization (`github.com/Katyusha-Proyect`), is split into two repos:
+Katyusha's package ecosystem, under the `Katyusha-Project`
+organization (`github.com/Katyusha-Project`), is split into two repos:
 
-- **`github.com/Katyusha-Proyect/katyusha-packages-archive`** — holds
+- **`github.com/Katyusha-Project/katyusha-packages-archive`** — holds
   only the `index.txt` text file (the catalog). This is what
   `KATYUSHA_REPO_URL` points to, and it's what Katyusha downloads on
   every `-i` / `-s` call.
-- **`github.com/Katyusha-Proyect/katyusha-packages`** — holds the
+- **`github.com/Katyusha-Project/katyusha-packages`** — holds the
   actual archive files, committed directly into the repo (no GitHub
   Releases involved) under:
   ```
@@ -73,7 +73,7 @@ organization (`github.com/Katyusha-Proyect`), is split into two repos:
 
 Keeping them separate means the index stays a tiny, fast, single-file
 download, while the (potentially large) binaries live in their own
-repo, browsable at `github.com/Katyusha-Proyect/katyusha-packages/tree/main/packages/...`.
+repo, browsable at `github.com/Katyusha-Project/katyusha-packages/tree/main/packages/...`.
 
 ### Getting the raw download URL
 
@@ -82,9 +82,9 @@ repo, browsable at `github.com/Katyusha-Proyect/katyusha-packages/tree/main/pack
 downloading it gets you a webpage, not the archive:
 
 ```
-github.com/Katyusha-Proyect/katyusha-packages/tree/main/packages/gnu/nano-9.0/nano-9.1.tar.gz
+github.com/Katyusha-Project/katyusha-packages/tree/main/packages/gnu/nano-9.0/nano-9.1.tar.gz
                                      ↓  drop "tree/", switch host
-raw.githubusercontent.com/Katyusha-Proyect/katyusha-packages/main/packages/gnu/nano-9.0/nano-9.1.tar.gz
+raw.githubusercontent.com/Katyusha-Project/katyusha-packages/main/packages/gnu/nano-9.0/nano-9.1.tar.gz
 ```
 
 `raw.githubusercontent.com` is already on Katyusha's default trusted
@@ -102,7 +102,7 @@ One line per package:
 - `VERSION`: package version.
 - `URL`: project homepage (informational).
 - `URL_PACK`: **https** raw download URL for the archive, under
-  `raw.githubusercontent.com/Katyusha-Proyect/katyusha-packages/...`.
+  `raw.githubusercontent.com/Katyusha-Project/katyusha-packages/...`.
   Accepts `.tar.gz`, `.tar.xz`, `.tar.bz2`, or plain `.tar` — tar
   auto-detects the compression.
 - `DESCRIPTION`: optional.
@@ -116,7 +116,7 @@ files) should ship an `install.sh` — see
 
 By default Katyusha reads the index from:
 ```
-https://raw.githubusercontent.com/Katyusha-Proyect/katyusha-packages-archive/main/index.txt
+https://raw.githubusercontent.com/Katyusha-Project/katyusha-packages-archive/main/index.txt
 ```
 
 Point it at a fork or private mirror with:

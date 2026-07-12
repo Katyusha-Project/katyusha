@@ -20,7 +20,7 @@ use std::process::Command;
 /// Default index URL. Can be overridden with the KATYUSHA_REPO_URL
 /// environment variable to point at a fork or a private mirror.
 pub const DEFAULT_INDEX_URL: &str =
-    "https://raw.githubusercontent.com/Katyusha-Proyect/katyusha-packages-archive/main/index.txt";
+    "https://raw.githubusercontent.com/Katyusha-Project/katyusha-packages-archive/main/index.txt";
 
 #[derive(Debug, Clone)]
 pub struct Package {

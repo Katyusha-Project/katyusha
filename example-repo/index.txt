@@ -10,14 +10,14 @@
 #   needs a build step, package it with an install.sh instead of
 #   relying on auto-detection.
 #
-# This index file lives in Katyusha-Proyect/katyusha-packages-archive.
+# This index file lives in Katyusha-Project/katyusha-packages-archive.
 # The actual archive files are committed directly (no releases) into
-# Katyusha-Proyect/katyusha-packages, under packages/. Their raw
+# Katyusha-Project/katyusha-packages, under packages/. Their raw
 # download URL follows this pattern:
 #   https://raw.githubusercontent.com/{owner}/{repo}/{branch}/{path}
 
-[nano][9.1][https://nano-editor.org][https://raw.githubusercontent.com/Katyusha-Proyect/katyusha-packages/main/packages/gnu/nano-9.0/nano-9.1.tar.gz][Simple terminal text editor]
+[nano][9.1][https://nano-editor.org][https://raw.githubusercontent.com/Katyusha-Project/katyusha-packages/main/packages/gnu/nano-9.0/nano-9.1.tar.gz][Simple terminal text editor]
 
 # btop: single self-contained binary, just like nano. Build it with
 # plain `make`, grab the resulting `bin/btop`, package it alone.
-[btop][1.4.7][https://github.com/aristocratos/btop][https://raw.githubusercontent.com/Katyusha-Proyect/katyusha-packages/main/packages/cli-tools/btop-1.4.7/btop-1.4.7.tar.gz][Modern resource monitor for the terminal]
+[btop][1.4.7][https://github.com/aristocratos/btop][https://raw.githubusercontent.com/Katyusha-Project/katyusha-packages/main/packages/cli-tools/btop-1.4.7/btop-1.4.7.tar.gz][Modern resource monitor for the terminal]

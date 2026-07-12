@@ -4,8 +4,8 @@ Section: admin
 Priority: optional
 Architecture: __ARCH__
 Depends: libc6 (>= 2.34), curl, tar
-Maintainer: Katyusha Project <contact@katyusha-proyect.dev>
-Homepage: https://github.com/Katyusha-Proyect/katyusha
+Maintainer: Katyusha Project <contact@katyusha-project.dev>
+Homepage: https://github.com/Katyusha-Project/katyusha
 Description: Universal package manager for Linux
  Katyusha installs packages from a GitHub-hosted index. Downloads are
  restricted to HTTPS and a trusted-host list, verified with SHA-256
